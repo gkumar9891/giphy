@@ -47,6 +47,8 @@
 
     --color-heading: var(--vt-c-text-dark-1);
     --color-text: var(--vt-c-text-dark-2);
+    
+    font-size: 16px;
   }
 }
 
@@ -71,4 +73,69 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+
+#container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.bg-black {
+  background-color: #000000;
+}
+
+.logo {
+  margin-bottom: 1rem;
+}
+
+.logo svg {
+  height: 30px;
+}
+
+.logo svg * {
+  fill: #fff;
+}
+
+#header {
+  padding-top: 3rem;
+}
+
+
+.form input {
+      padding: 10px 20px;
+      border: 0;
+      font-size: 1rem;
+
+}
+
+.form input:focus-visible {
+  outline: none;
+}
+
+.form button[type="submit"] {
+  min-width: 40px;
+  border: 0;
+  background: linear-gradient(45deg, rgb(153, 51, 255) 0%, rgb(255, 102, 102) 50%, rgb(153, 51, 255) 100%)
 }

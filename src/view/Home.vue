@@ -1,16 +1,26 @@
 <template>
-    <div>
-        Hii
+    <div id="container">
+    <header id="header">
+        <Logo />
         <SearchBar />
-    </div>
+    </header>
+  </div>
 </template>
 
 <script>
-import SearchBar from '../components/SearchBar.vue';
-
+import SearchBar from "../components/SearchBar.vue";
+import Logo from "../components/Logo.vue";
+import Gallery from  "../components/Gallery.vue";
 export default {
-    components() {
-        SearchBar;
+    data() {
+        return {
+            images: []
+        }
+    },
+    components: {
+        SearchBar,
+        Logo,
+        Gallery,
     }
 }
 </script>

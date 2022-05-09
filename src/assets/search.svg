@@ -1,9 +1,4 @@
-<template>
-    <div class="form">
-        <form action="#">
-            <div class="display-flex">
-                <input placeholder="search for the title" type="text" class="flex-grow-1">
-                <button type="submit" class="btn search"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="30px" viewBox="0 0 30 30" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="30px" viewBox="0 0 30 30" version="1.1">
     <!-- Generator: Sketch 51 (57462) - http://www.bohemiancoding.com/sketch -->
     <title>search</title>
     <desc>Created with Sketch.</desc>
@@ -24,14 +19,3 @@
         </g>
     </g>
 </svg>
-</button>
-            </div>
-        </form>
-    </div>
-</template>
-
-<script>
-export default {
-    
-}
-</script>
