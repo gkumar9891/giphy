@@ -11,6 +11,8 @@
 import SearchBar from "../components/SearchBar.vue";
 import Logo from "../components/Logo.vue";
 import Gallery from  "../components/Gallery.vue";
+import gifService from '../services/gif.js';
+
 export default {
     data() {
         return {
@@ -21,6 +23,10 @@ export default {
         SearchBar,
         Logo,
         Gallery,
+    },
+
+    mounted() {
+        gifService.trending();
     }
 }
 </script>
