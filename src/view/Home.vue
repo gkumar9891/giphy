@@ -2,7 +2,7 @@
     <div id="container">
     <header id="header">
         <Logo />
-        <SearchBar />
+        <SearchBar @imageList='imageList' />
     </header>
     <Gallery :images="images" />
     <Pagination @imageList='imageList' />
