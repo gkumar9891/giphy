@@ -1,16 +1,13 @@
 import axios from 'axios';
 
 class gif {
-    constructor() {
-        this.params =   {
-            api_key: 'Dst7UyI10lCaZeA9seXlAWA2qaXf0uGY'
-        }
-    }
-
-    async trending() {
-        await axios.get('/gifs/trending', {
-          params: this.params
-        });
+    trending(params) {
+        return axios.get('/gifs/trending', {
+            params: params
+        })
+        .then( response => {
+            return response.data.data;
+        })
     }
 }
 
