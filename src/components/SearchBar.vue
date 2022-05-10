@@ -54,11 +54,18 @@ export default {
 
     methods: {
         getGif() {
+
+        if(this.title != '') {
+          this.$store.dispatch("setPaginationCurrent", 1);
+          this.$store.dispatch("setPaginationTotal", 4);
+          this.$store.dispatch("setSearchTitle", this.title);
+        }
+
         let params = {
                   api_key: 'Dst7UyI10lCaZeA9seXlAWA2qaXf0uGY',
                   limit: 10,
                   q: this.title,
-          }
+        }
 
           gifServices.search(params).then( images => {
                 this.$emit('imageList', images);
