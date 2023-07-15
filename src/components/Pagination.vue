@@ -58,7 +58,7 @@ export default {
       }
 
       let params = {
-        api_key: "Dst7UyI10lCaZeA9seXlAWA2qaXf0uGY",
+        api_key: import.meta.env.API_KEY,
         limit: 10,
         offset: this.current * 10 - 9,
       };
@@ -83,7 +83,7 @@ export default {
         this.$store.dispatch("setPaginationTotal", this.total - 1);
 
         let params = {
-          api_key: "Dst7UyI10lCaZeA9seXlAWA2qaXf0uGY",
+          api_key: import.meta.env.VITE_API_KEY,
           limit: 10,
           offset: this.current * 10 - 9,
         };

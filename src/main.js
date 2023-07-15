@@ -4,6 +4,6 @@ import './assets/base.css';
 import axios from 'axios';
 import store from './store/main.js';
 
-axios.defaults.baseURL = 'https://api.giphy.com/v1/'; 
+axios.defaults.baseURL = import.meta.env.VITE_GIFY_BASE_URL; 
 
 createApp(App).use(store).mount('#app');

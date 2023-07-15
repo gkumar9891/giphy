@@ -30,8 +30,9 @@ export default {
     },
 
     mounted() {
+        debugger
         let params = {
-                  api_key: 'Dst7UyI10lCaZeA9seXlAWA2qaXf0uGY',
+                  api_key: import.meta.env.VITE_API_KEY,
                   limit: 10,
         }
 
