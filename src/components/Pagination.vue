@@ -51,7 +51,7 @@ export default {
     next(i) {
       if (i) {
         this.$store.dispatch("setPaginationCurrent", i);
-        this.$store.dispatch("setPaginationTotal", this.current + 2);
+        this.$store.dispatch("setPaginationTotal", this.current + 3);
       } else {
         this.$store.dispatch("setPaginationCurrent", this.current + 1);
         this.$store.dispatch("setPaginationTotal", this.total + 1);
