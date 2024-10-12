@@ -57,8 +57,6 @@ export default {
         this.$store.dispatch("setPaginationTotal", this.total + 1);
       }
 
-      debugger
-
       let params = {
         api_key: import.meta.env.VITE_API_KEY,
         limit: 10,
